@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recept hozzáadása:</h1>
+    <a href="/">Főoldal</a>
+  
+
+
+    <form> 
+        <label for="name">Étel neve</label>
+        <input type="text" name="name"><br>
+        <label>Leírás</label>
+        <textarea name="description" rows="10" cols="30">
+            </textarea><br>
+        <label>Hozzávalók</label>
+        <section>
+            <fieldset name="comps">
+            <input type="text" name="alap">
+            <input type="text" name="darab">
+            <select name="mertek">
+              <option value="1000">kg</option>
+              <option value="10">dkg</option>
+              <option value="1">g</option>
+              <option value="1000">l</option>
+              <option value="100">dl</option>
+              <option value="10">cl</option>
+              <option value="1">ml</option>
+              <option value="1">darab</option>
+            </select>
+            </fieldset><br>
+            <fieldset name="comps">
+            <input type="text" name="alap">
+            <input type="text" name="darab">
+            <select name="mertek">
+              <option value="1000">kg</option>
+              <option value="10">dkg</option>
+              <option value="1">g</option>
+              <option value="1000">l</option>
+              <option value="100">dl</option>
+              <option value="10">cl</option>
+              <option value="1">ml</option>
+              <option value="1">darab</option>
+            </select>
+            </fieldset><br>
+            <fieldset name="comps">
+            <input type="text" name="alap">
+            <input type="text" name="darab">
+            <select name="mertek">
+              <option value="1000">kg</option>
+              <option value="10">dkg</option>
+              <option value="1">g</option>
+              <option value="1000">l</option>
+              <option value="100">dl</option>
+              <option value="10">cl</option>
+              <option value="1">ml</option>
+              <option value="1">darab</option>
+            </select>
+            </fieldset><br>
+            <fieldset name="comps">
+            <input type="text" name="alap">
+            <input type="text" name="darab">
+            <select name="mertek">
+              <option name="weight" value="1000">kg</option>
+              <option name="weight" value="10">dkg</option>
+              <option name="weight" value="1">g</option>
+              <option name="capacity" value="1000">l</option>
+              <option name="capacity" value="100">dl</option>
+              <option name="capacity" value="10">cl</option>
+              <option name="capacity" value="1">ml</option>
+              <option name="piece" value="1">darab</option>
+            </select>
+            </fieldset><br>
+            <fieldset name="comps">
+            <input type="text" name="alap">
+            <input type="text" name="darab">
+            <select name="mertek">
+              <option value="1000">kg</option>
+              <option value="10">dkg</option>
+              <option value="1">g</option>
+              <option value="1000">l</option>
+              <option value="100">dl</option>
+              <option value="10">cl</option>
+              <option value="1">ml</option>
+              <option value="1">darab</option>
+            </select>
+            </fieldset><br>
+        </section>
+        <button id="addIngredients">+</button><br>
+        <label for="steps">Lépések</label>
+        <textarea name="steps" rows="10" cols="30">
+            </textarea><br>
+        <label for="category">Kategória</label>
+        <select name="category">
+            <option value="1">Előétel</option>
+            <option value="2">Főétel</option>
+            <option value="3">Desszert</option>
+          </select><br>
+        <label for="time">Idő</label>
+        <input type="number" name="time">perc<br>
+        <label for="portion">Adag</label>
+        <input type="number" name="portion">adag<br>
+        <input type="submit" value="Küldés"><br>
+    </form>
+
+    <script src="./add.js"></script>
+</body>
+</html>

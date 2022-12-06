@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+<body>
+<h1><%= recipe.name %></h1>
+
+    <div class="recipe">
+        <b>Leírás:</b><br><%= recipe.description %><br><br>
+        <b>Hozzávalók:</b><br> <ul><% recipe.ingredients.forEach((ingredient) => { %>
+
+            <li><span name="quantity" data-defaultQuantity='<%= ingredient.quantity %>'><%= ingredient.quantity %></span> <%= ingredient.unit %> <%= ingredient.name %> </li>
+
+        <% }) %></ul> <br><br>
+        <b>Lépések:</b><br><%= recipe.steps %><br><br>
+        <b>Idő:</b><br><%= recipe.time %> perc<br><br>
+        <button name="decrease">-</button> <span id="portion" data-defaultPortion='<%= recipe.portion %>'><%= recipe.portion %> </span><button name="increase">+</button>
+
+
+
+    </div>
+
+
+
+    <script src="recipe.js"></script>
+</body>
+</html>
